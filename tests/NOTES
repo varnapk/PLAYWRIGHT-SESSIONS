@@ -1,0 +1,38 @@
+Co-workers
+-> Concept used for parallel execution.
+-> Parrallel execution means running multiple testcases on same time
+-> Advantage of workers : fast execution and time saving
+Alert
+->Simple alert
+->Confirmation alert
+->Prompt alert
+Visual Testing
+-> used to identify UI changes
+-> Visual testing will detect font change issues, color change issues, alignment issues, layout issues, space issues,missing or extra elements, pixel changes etc.
+-> How it works:
+* First run: Playwright takes a screenshot and saves it as the “baseline” / golden image.
+* Every run after: Takes a new screenshot and pixel-compares it to the baseline.
+* If pixels differ: Test fails and Playwright gives you a diff image showing what changed.
+-> API Testing
+PUT- Complete updation
+PATCH- Partial update
+GET
+POST
+DELETE
+Status code for GET-200
+Status code for POST-201
+Status code for server error- 500
+Status code for bad request-400
+Status code for page not found-404
+
+Frame code 
+test.only('frames',async({page})=>{
+    await page.goto('https://demoqa.com/frames')
+    const sampleframe=page.frameLocator("#frame1")
+    console.log(await sampleframe.locator("#sampleHeading").textContent())
+})
+
+POM 
+
+
+
