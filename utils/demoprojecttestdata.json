@@ -1,0 +1,45 @@
+{
+  "signupcredentials": {
+             "username": "varnapk3",
+            "password": "Varnapk102@demo"   
+    },
+    "validlogincredentials":{
+        "username":"varnapk3",
+        "password":"Varnapk102@demo"
+    },
+    "invalidlogincredentials":[
+        {
+            "testcase":"Invalidusername and ValidPassword",
+            "username":"testvarna",
+            "password":"Varnapk102@demo"
+        },
+        {
+            "testcase":"ValidUsername and InvalidPassword",
+            "username":"varnapk3",
+            "password":"testpassword"
+        },
+        {
+            "testcase":"InvalidUsername and InvalidPassword",
+            "username":"testvarna",
+            "password":"testpassword"
+        }
+    ],
+    "placeorderDetails":{
+        "name":"TestVarna",
+        "country":"TestCountry",
+        "city":"TestCity",
+        "creditcard":"1234567890",
+        "month":"January",
+        "year":"1990"
+
+    }
+
+}
+  
+
+    
+ 
+   
+
+ 
+

@@ -32,7 +32,56 @@ test.only('frames',async({page})=>{
     console.log(await sampleframe.locator("#sampleHeading").textContent())
 })
 
-POM 
+Allure report
+npm install -D allure-playwright allure-commandline
+dir allure-results - To verify the result generated or not
+npx allure generate allure-results --clean -o allure-report- command to generate report
+npx allure open allure-report- To open report
+
+Type Script
+-> It is a programming language developed by microsoft
+-> Improve version of javascript
+-> Static typing language- we have to declare the data type of the variable.
+    javascript: let age=25
+    typescript: let age:number=25
+-> Java script will allow any type of value to a variable, but in type script only allwoed data type value will be allowed.
+-> let name:string="anu"
+    console.log(name)
+-> let ispassed:boolean=true
+-> Error will check during compile time itself
+-> File extension will be .ts instead of .js 
+-> Code safety is more in typescript compare to javascript
+-> npm install -g typescript: here -g means global, to use in all projects and all folders.
+-> tsc -v : To check the version, here tsc is type script compiler.
+-> tsc typescriptSample.ts : To compile the program 
+-> node typescriptSample.js : To run the program, we have to convert to javascript then only browsers can iunderstand the program. Browsers cant understand typescript
+
+await page.locator('.day:not(.old):not(.new)').filter({ hasText: /^8$/ }).click()
+
+BDD
+scenario
+given
+when
+and
+then
+login.feature: contains scenarios
+login.step.js: contains automation code of scenarios
+login.feature used mainly for non-technical users
+commonjs 
 
 
 
+npx cucumber-js --require step-definition/*.js --format html:reports/cucumber-report.html
+
+npx cucumber-js --require step-definitions/**/*.js --tags
+ "@validation" --retry 2
+
+ npx cucumber-js --require step-definitions/**/*.js --tags "@smoke"
+ git config --global user.name "enter our github username"
+ git config --global user.email "enter your github email"
+ git init
+ git clone enter git repository url
+git add .
+git commit -m "Commit message"
+git branch
+git branch -M main

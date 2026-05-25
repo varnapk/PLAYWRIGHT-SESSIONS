@@ -1,0 +1,1 @@
+[{"uid":"519430ab3abf2cce","name":"Calender validation","time":{"start":1778205605984,"stop":1778205633181,"duration":27197},"status":"passed","severity":"normal"},{"uid":"534559198cda34e8","name":"login using valid credentials","time":{"start":1778205252550,"stop":1778205269504,"duration":16954},"status":"failed","severity":"normal"}]

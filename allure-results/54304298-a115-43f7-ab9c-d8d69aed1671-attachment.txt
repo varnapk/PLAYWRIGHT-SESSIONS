@@ -1,0 +1,9 @@
+FULL OBJECT: [
+  {
+    testcase: 'fill form and submit',
+    username: 'varna',
+    password: 'Varna10@demo'
+  }
+]
+USERNAME: undefined
+PASSWORD: undefined

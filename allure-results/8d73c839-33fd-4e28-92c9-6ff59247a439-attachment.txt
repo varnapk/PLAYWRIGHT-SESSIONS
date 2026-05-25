@@ -1,0 +1,3 @@
+FULL OBJECT: [ { username: 'varnapk', password: 'Varnapk101@demo' } ]
+USERNAME: varnapk
+PASSWORD: Varnapk101@demo
