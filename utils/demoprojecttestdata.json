@@ -1,10 +1,10 @@
 {
   "signupcredentials": {
-             "username": "varnapk3",
+             "username": "varnapk4",
             "password": "Varnapk102@demo"   
     },
     "validlogincredentials":{
-        "username":"varnapk3",
+        "username":"varnapk4",
         "password":"Varnapk102@demo"
     },
     "invalidlogincredentials":[

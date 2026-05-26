@@ -12,9 +12,10 @@ test('Login using valid Credentials', async({page})=>{
     const username=credentialsList.validlogincredentials.username
     const password= credentialsList.validlogincredentials.password
     await demoprojectloginpage.login(username,password)
-    const welcomeText=page.locator('#nameofuser')
-    await expect(welcomeText).toBeVisible()
-    await expect(welcomeText).toHaveText('Welcome varnapk3')
+    const logoutText=page.locator('#logout2')
+    await expect(logoutText).toBeVisible()
+    await expect(logoutText).toHaveText('Log out')
+
 })
 test('Login using Invalid Username and Valid Password', async({page})=>{
     

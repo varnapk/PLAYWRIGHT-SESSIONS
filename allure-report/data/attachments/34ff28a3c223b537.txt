@@ -1,0 +1,3 @@
+FULL OBJECT: [ { username: 'varna', password: 'Varna10@demo' } ]
+USERNAME: undefined
+PASSWORD: undefined
