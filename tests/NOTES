@@ -85,3 +85,5 @@ git add .
 git commit -m "Commit message"
 git branch
 git branch -M main
+JENKINS
+npx playwright codegen https://www.saucedemo.com/

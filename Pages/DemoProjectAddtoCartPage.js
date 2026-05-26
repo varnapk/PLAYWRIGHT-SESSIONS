@@ -32,14 +32,14 @@ export class DemoProjectAddtocartPage{
     async goToCart(){
         await this.cartLink.click()
     }
-    async placeOrder(){
+    async placeOrder(name,country,city,creditcard,month,year){
         await this.placeOrderButton.click() 
-        await this.nameInPlaceOrder.fill('TestVarna')
-        await this.countryInPlaceOrder.fill('TestCountry')
-        await this.cityInPlaceorder.fill('TestCity')
-        await this.CreditCardInPlaceOrder.fill('1234567890')
-        await this.monthInPlaceOrder.fill('January')
-        await this.yearInPlaceOrder.fill('1930')
+        await this.nameInPlaceOrder.fill(name)
+        await this.countryInPlaceOrder.fill(country)
+        await this.cityInPlaceorder.fill(city)
+        await this.CreditCardInPlaceOrder.fill(creditcard)
+        await this.monthInPlaceOrder.fill(month)
+        await this.yearInPlaceOrder.fill(year)
         await this.purchaseButtonInPlaceOrder.click()
 
     }
