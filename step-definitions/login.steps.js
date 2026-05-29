@@ -19,13 +19,16 @@ import assert from 'assert'//importing the assert module, which provides a set o
         await page.goto('https://www.saucedemo.com/')
     })
 //navigating to the specified URL, which is the login page of the application being tested.
+   // Username and password is hardcoded 
     When('User enters valid username and password', async function() {
         await page.fill('#user-name', 'standard_user')
         await page.fill('#password', 'secret_sauce')
     })
-    When('User enters invalid username and password', async function() {
-        await page.fill('#user-name', 'invalid_user')
-        await page.fill('#password', 'invalid_password')
+ 
+    //Giving username and password as parameter
+    When('User enters invalid username {string} and password {string}', async function(username,password) {
+        await page.fill('#user-name', username)
+        await page.fill('#password', password)
     })
     When('User clicks on the login button', async function() {
         await page.click('#login-button')
@@ -35,7 +38,7 @@ import assert from 'assert'//importing the assert module, which provides a set o
         assert.ok(title.includes('Swag Labs'))
         await browser.close()
     })
-    Then('User should not be redirected to the home page', async function(){
+    Then('User should not be redirected to the home page,error message will display in login page', async function(){
         const errorMessage=await page.locator("//h3[@data-test='error']").textContent()
         assert.ok(errorMessage.includes('Epic sadface: Username and password do not match any user in this service'))
         await browser.close()

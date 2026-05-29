@@ -87,3 +87,33 @@ git branch
 git branch -M main
 JENKINS
 npx playwright codegen https://www.saucedemo.com/
+
+BDD
+-> login.feature 
+* file contains test scenarios
+* using normal english language
+* uses for business purpose and non-technical persons to understand what are the scenarios are going to automate.
+* Listing the behaiviour of the application
+-> login.steps.js 
+* file contains automation code of the scenarios written in the login.feature file.
+* It is a step definition file
+
+Hooks in cucumber
+-> BeforeAll- runs only once before all other scenarios
+eg: browser launch
+-> AfterAll- runs only one time after all other scenarios are completed.
+eg: browser close or logout
+-> Before- executes before each scenario execution
+eg: page setup and all
+-> After- executes after each scenario execution
+eg: 
+-> BeforeStep- executes before every step in a scenario
+eg: Screenshot taking
+-> AfterStep- executes after every step in a scenario
+eg: 
+
+-> Command to run individual file in the step definition
+npx cucumber-js features/inventory.feature --require step-definitions/*.js
+-> Command to run all files in the step definition
+ npx cucumber-js --require step-definitions/**/*.js    
+

@@ -7,6 +7,6 @@ Then User should be redirected to the home page
 
 Scenario: User should notbe able to login with invalid credentials
 Given User is on the login page
-When User enters invalid username and password
+When User enters invalid username "invalid_user" and password "invalid_password"
 And User clicks on the login button
-Then User should not be redirected to the home page
+Then User should not be redirected to the home page,error message will display in login page
